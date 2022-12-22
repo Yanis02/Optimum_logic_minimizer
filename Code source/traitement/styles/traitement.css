@@ -1,0 +1,1340 @@
+a {
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #4a4453;
+}
+a::after {
+  content: "";
+  display: block;
+  background-color: #e33e5a;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+a:hover {
+  color: black;
+}
+a:hover::after {
+  width: 100%;
+}
+ul {
+  position: relative;
+  padding: auto;
+  width: 40%;
+  left: 45%;
+  right: 30%;
+  top: 30px;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+#main {
+  position: relative;
+  width: 80%;
+  height: 750px;
+  margin: 3% 10%;
+  padding: 0px;
+  font-family: "Comfortaa";
+  font-style: normal;
+}
+#nom {
+  position: relative;
+  width: 70%;
+  height: 20%;
+  left: 120px;
+  top: 20px;
+  padding: 10px;
+}
+#nom h1 {
+  font-weight: 300;
+  position: absolute;
+
+  margin: 10px 40px;
+  font-size: 100px;
+  line-height: 143px;
+  background: linear-gradient(91.4deg, #5c38ff 5.43%, #e33e5a 99.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+h5 {
+  font-weight: 200;
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 50px;
+  left: 570px;
+  bottom: 60px;
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #e33e5a;
+}
+.h5num {
+  font-weight: 200;
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 50px;
+  left: 570px;
+  bottom: 60px;
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #5c38ff;
+}
+.containerchoix {
+  position: relative;
+  padding: 5px 0px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 0px;
+  top: 30px;
+}
+
+.input {
+  position: relative;
+  width: 800px;
+  height: 43px;
+  border-radius: 15px;
+  left: 120px;
+  border: 2px solid #5c38ff;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(91.34deg, #5c38ff 0.29%, #e33e5a 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Comfortaa";
+  font-style: medium;
+  user-select: text;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.submit {
+  background-color: red;
+  position: relative;
+  top: 20%;
+}
+
+.choix {
+  position: relative;
+  top: 0px;
+  bottom: 10px;
+  width: 280px;
+  height: 40px;
+  left: 130px;
+  border: 0;
+  padding: 5px;
+  background: rgba(227, 62, 90, 0.3);
+  border-radius: 5px;
+}
+.choixnum {
+  position: relative;
+  top: 0px;
+  bottom: 10px;
+  width: 280px;
+  height: 40px;
+  left: 130px;
+  border: 0;
+  padding: 5px;
+  background: #5c38ff4d;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 45%;
+  height: 27px;
+  margin: 7px 5px;
+  border-radius: 5px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+
+  color: #ffffff;
+}
+.btn:active {
+  background: rgba(255, 255, 255, 0.12);
+}
+#numerique {
+  background: #5c38ff;
+}
+#numerique :hover {
+  background-color: #e33e5a;
+}
+#litterale {
+  background: #e33e5a;
+  cursor: pointer;
+}
+#submit {
+  position: relative;
+
+  left: 50%;
+  width: 2.7%;
+}
+.clavier {
+  position: relative;
+  width: 60%;
+  height: 20%;
+  top: 50px;
+  left: 210px;
+  border: 4px solid #e33e5a;
+  padding: 0.5%;
+  font-family: "Comfortaa";
+  font-style: normal;
+  border-radius: 10px;
+  transition: bottom 0.4s;
+}
+.keys {
+  padding: 10px;
+}
+.keyboard--hidden {
+  bottom: -100%;
+}
+.error {
+  color: red;
+}
+.hide {
+  display: none;
+}
+.key {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin: 5px;
+  color: #1d0f33;
+
+  background: #e33e5a4d;
+  width: 5%;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+.key:active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.claviernum {
+  position: relative;
+  width: 60%;
+  height: 10%;
+  top: 50px;
+  left: 210px;
+  border: 4px solid #5c38ff;
+  padding: 0.5%;
+  font-family: "Comfortaa";
+  font-style: normal;
+  border-radius: 10px;
+}
+.keynum {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin: 4px 10px;
+  color: #1d0f33;
+  -webkit-tap-highlight-color: transparent;
+  background: #5c38ff4d;
+  cursor: pointer;
+  width: 5%;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+}
+.keynum:active {
+  background: rgba(255, 255, 255, 0.12);
+}
+.keynumhidden {
+  display: block;
+}
+body {
+  background: url("./images/Background.svg");
+}
+i {
+  font-size: 25px;
+  color: #e33e5a;
+
+  position: absolute;
+  width: 44px;
+  height: 29px;
+  margin: 7px 750px;
+  cursor: pointer;
+}
+.inum {
+  font-size: 25px;
+  color: #5c38ff;
+
+  position: absolute;
+  width: 44px;
+  height: 29px;
+  margin: 7px 750px;
+  cursor: pointer;
+}
+#nor1 {
+  position: absolute;
+  left: 100%;
+  right: 11.37%;
+  top: 25%;
+  bottom: 54.6%;
+  width: 2.7%;
+}
+#nor2 {
+  position: absolute;
+  left: 1%;
+  right: 88.57%;
+  top: 41%;
+  bottom: 34.54%;
+  width: 2.7%;
+}
+#or {
+  position: relative;
+
+  left: 50%;
+  width: 2.7%;
+}
+#simplifier {
+  position: relative;
+  left: 43%;
+  bottom: 150px;
+  width: 160px;
+  height: 43px;
+  border-radius: 15px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+
+  border: 2px solid #5c38ff;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(91.34deg, #5c38ff 0.29%, #e33e5a 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-size: 17px;
+
+  color: #ffffff;
+}
+.clearfunc {
+  width: 20px;
+  position: relative;
+  top: 5px;
+  left: 40px;
+  cursor: pointer;
+  display: none;
+}
+.cleardont {
+  width: 20px;
+  position: relative;
+  top: 6px;
+  left: 40px;
+  cursor: pointer;
+  display: none;
+}
+#next {
+  font-size: 25px;
+  position: absolute;
+  bottom: 327px;
+  left: 140px;
+  cursor: pointer;
+  color: #e33e5a;
+  display: none;
+}
+
+@media (max-width: 860px) and (min-width: 654px) {
+  a {
+    font-size: 15px;
+  }
+  ul {
+    position: relative;
+    width: 367px;
+    left: 100px;
+    right: 200px;
+    bottom: 30px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  #nom h1 {
+    font-weight: 300;
+    margin: 40px -100px;
+    font-size: 90px;
+    bottom: 10px;
+  }
+  h5 {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 390px;
+    bottom: 70px;
+    font-size: 18px;
+  }
+  .input {
+    width: 600px;
+    height: 43px;
+    border-radius: 15px;
+    left: -50px;
+    top: -30px;
+    margin: 0 0 40px 0;
+    font-size: 15px;
+  }
+  .choix {
+    position: absolute;
+
+    width: 200px;
+    height: 30px;
+    left: -40px;
+    top: -65px;
+  }
+  .btn {
+    width: 40%;
+
+    margin: 3px 8px;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    border: 0;
+  }
+  .clavier {
+    position: relative;
+    width: 50%;
+    height: 51%;
+    top: -40px;
+    left: 130px;
+    border-radius: 10px;
+  }
+  .key {
+    width: 10%;
+    height: 30px;
+
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .claviernum {
+    position: relative;
+    width: 40%;
+    height: 20%;
+    top: -20px;
+    left: 140px;
+    border: 4px solid #5c38ff;
+    padding: 0.5%;
+    font-family: "Comfortaa";
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .keynum {
+    width: 5%;
+    height: 30px;
+  }
+  #nom {
+    position: relative;
+    width: 70%;
+    left: 50px;
+    top: 20px;
+    bottom: 100px;
+    padding: 10px;
+  }
+  .h5num {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 390px;
+    bottom: 70px;
+    font-size: 18px;
+  }
+  .clearfunc {
+    width: 20px;
+    position: absolute;
+    top: -15px;
+    left: 480px;
+    cursor: pointer;
+  }
+  .cleardont {
+    width: 20px;
+    position: relative;
+    top: -103px;
+    left: 480px;
+    cursor: pointer;
+  }
+  #next {
+    font-size: 25px;
+    position: absolute;
+    bottom: 360px;
+    left: -230px;
+    cursor: pointer;
+    color: #e33e5a;
+  }
+  i {
+    font-size: 25px;
+    color: #e33e5a;
+
+    position: absolute;
+    width: 44px;
+    height: 29px;
+    cursor: pointer;
+  }
+  #nor1 {
+    position: absolute;
+    left: 0px;
+    right: 11.37%;
+    top: 100px;
+    bottom: 70.6%;
+    width: 2.7%;
+  }
+  #nor2 {
+    position: absolute;
+    left: 1%;
+    right: 88.57%;
+    top: 41%;
+    width: 2.7%;
+    display: none;
+  }
+  #or {
+    position: relative;
+    bottom: 20%;
+    left: 50%;
+    width: 2.7%;
+    display: none;
+  }
+}
+
+@media (max-width: 1056px) and (min-width: 861px) {
+  a {
+    font-size: 15px;
+  }
+  ul {
+    position: relative;
+    width: 467px;
+    left: 300px;
+    right: 200px;
+    bottom: 30px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  #nom h1 {
+    font-weight: 300;
+    margin: 40px -60px;
+    font-size: 100px;
+    bottom: 10px;
+  }
+  h5 {
+    font-weight: 200;
+    width: 500px;
+    top: 20px;
+    left: 470px;
+    bottom: 70px;
+    font-size: 19px;
+  }
+  .input {
+    width: 700px;
+    height: 43px;
+    border-radius: 15px;
+    left: -10px;
+    top: -30px;
+    margin: 0 0 40px 0;
+    font-size: 15px;
+  }
+  .choix {
+    position: absolute;
+
+    width: 200px;
+    height: 30px;
+    left: -00px;
+    top: -65px;
+  }
+  .btn {
+    width: 40%;
+
+    margin: 3px 8px;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    border: 0;
+  }
+  .clavier {
+    position: relative;
+    width: 45%;
+    height: 51%;
+    top: -40px;
+    left: 170px;
+    border-radius: 10px;
+  }
+  .key {
+    width: 10%;
+    height: 30px;
+    left: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .claviernum {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    top: -20px;
+    left: 180px;
+    border: 4px solid #5c38ff;
+    padding: 0.5%;
+    font-family: "Comfortaa";
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .keynum {
+    width: 10%;
+    height: 30px;
+    left: 12px;
+  }
+  #nom {
+    position: relative;
+    width: 70%;
+    left: 50px;
+    top: 20px;
+    bottom: 100px;
+    padding: 10px;
+  }
+  .h5num {
+    font-weight: 200;
+    width: 500px;
+    top: 20px;
+    left: 470px;
+    bottom: 70px;
+    font-size: 19px;
+  }
+  .clearfunc {
+    width: 20px;
+    position: absolute;
+    top: -15px;
+    left: 620px;
+    cursor: pointer;
+  }
+  .cleardont {
+    width: 20px;
+    position: relative;
+    top: -103px;
+    left: 620px;
+    cursor: pointer;
+  }
+  #next {
+    font-size: 25px;
+    position: absolute;
+    bottom: 357px;
+    left: -95px;
+    cursor: pointer;
+    color: #e33e5a;
+  }
+  i {
+    font-size: 25px;
+    color: #e33e5a;
+
+    position: absolute;
+    width: 44px;
+    height: 29px;
+    cursor: pointer;
+  }
+  #nor1 {
+    position: absolute;
+    left: 0px;
+    right: 11.37%;
+    top: 100px;
+    bottom: 70.6%;
+    width: 2.7%;
+  }
+  #nor2 {
+    position: absolute;
+    left: 1%;
+    right: 88.57%;
+    top: 41%;
+    width: 2.7%;
+    display: none;
+  }
+  #or {
+    position: relative;
+    bottom: 20%;
+    left: 50%;
+    width: 2.7%;
+    display: none;
+  }
+}
+@media (max-width: 653px) and (min-width: 567px) {
+  a {
+    font-size: 15px;
+  }
+  ul {
+    position: relative;
+    width: 250px;
+    left: 50px;
+    right: 200px;
+    bottom: 30px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  #nom h1 {
+    font-weight: 300;
+    margin: 40px -120px;
+    font-size: 80px;
+    bottom: 10px;
+  }
+  h5 {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 320px;
+    bottom: 70px;
+    font-size: 17px;
+  }
+  .input {
+    width: 500px;
+    height: 43px;
+    border-radius: 15px;
+    left: -50px;
+    top: -50px;
+    margin: 0 0 40px 0;
+    font-size: 15px;
+  }
+  .choix {
+    position: absolute;
+
+    width: 200px;
+    height: 30px;
+    left: -40px;
+    top: -85px;
+  }
+  .btn {
+    width: 40%;
+
+    margin: 3px 8px;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    border: 0;
+  }
+  .clavier {
+    position: relative;
+    width: 50%;
+    height: 51%;
+    top: -50px;
+    left: 80px;
+    border-radius: 10px;
+  }
+  .key {
+    width: 10%;
+    height: 30px;
+    left: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .claviernum {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    top: -30px;
+    left: 110px;
+    border: 4px solid #5c38ff;
+    padding: 0.5%;
+    font-family: "Comfortaa";
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .keynum {
+    width: 5%;
+    height: 30px;
+  }
+  #nom {
+    position: relative;
+    width: 70%;
+    left: 50px;
+    top: 20px;
+    bottom: 100px;
+    padding: 10px;
+  }
+  .h5num {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 320px;
+    bottom: 70px;
+    font-size: 17px;
+  }
+  .clearfunc {
+    width: 20px;
+    position: absolute;
+    top: -34px;
+    left: 390px;
+    cursor: pointer;
+  }
+  .cleardont {
+    width: 20px;
+    position: relative;
+    top: -123px;
+    left: 390px;
+    cursor: pointer;
+  }
+  #next {
+    font-size: 25px;
+    position: absolute;
+    bottom: 375px;
+    left: -330px;
+    cursor: pointer;
+    color: #e33e5a;
+  }
+  i {
+    font-size: 25px;
+    color: #e33e5a;
+
+    position: absolute;
+    width: 44px;
+    height: 29px;
+    cursor: pointer;
+  }
+  #nor1 {
+    position: absolute;
+    left: 0px;
+    right: 11.37%;
+    top: 100px;
+    bottom: 70.6%;
+    width: 2.7%;
+  }
+  #nor2 {
+    position: absolute;
+    left: 1%;
+    right: 88.57%;
+    top: 41%;
+    width: 2.7%;
+  }
+  #or {
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    width: 2.7%;
+  }
+}
+@media (max-width: 566px) and (min-width: 500px) {
+  a {
+    font-size: 14px;
+  }
+  ul {
+    position: relative;
+    width: 150px;
+    left: 50px;
+    right: 200px;
+    bottom: 30px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  #nom h1 {
+    font-weight: 300;
+    margin: 40px -120px;
+    font-size: 70px;
+    bottom: 10px;
+  }
+  h5 {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 270px;
+    bottom: 70px;
+    font-size: 16px;
+  }
+  .input {
+    width: 450px;
+    height: 43px;
+    border-radius: 15px;
+    left: -50px;
+    top: -50px;
+    margin: 0 0 40px 0;
+    font-size: 15px;
+  }
+  .choix {
+    position: absolute;
+
+    width: 200px;
+    height: 30px;
+    left: -40px;
+    top: -85px;
+  }
+  .btn {
+    width: 40%;
+
+    margin: 3px 8px;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    border: 0;
+  }
+  .clavier {
+    position: relative;
+    width: 50%;
+    height: 51%;
+    top: -50px;
+    left: 80px;
+    border-radius: 10px;
+  }
+  .key {
+    width: 10%;
+    height: 30px;
+    left: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .claviernum {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    top: -30px;
+    left: 110px;
+    border: 4px solid #5c38ff;
+    padding: 0.5%;
+    font-family: "Comfortaa";
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .keynum {
+    width: 5%;
+    height: 30px;
+  }
+  #nom {
+    position: relative;
+    width: 70%;
+    left: 50px;
+    top: 20px;
+    bottom: 100px;
+    padding: 10px;
+  }
+  .h5num {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 270px;
+    bottom: 70px;
+    font-size: 16px;
+  }
+  .clearfunc {
+    width: 20px;
+    position: absolute;
+    top: -34px;
+    left: 350px;
+    cursor: pointer;
+  }
+  .cleardont {
+    width: 20px;
+    position: relative;
+    top: -123px;
+    left: 350px;
+    cursor: pointer;
+  }
+  #next {
+    font-size: 25px;
+    position: absolute;
+    bottom: 375px;
+    left: -375px;
+    cursor: pointer;
+    color: #e33e5a;
+  }
+  i {
+    font-size: 25px;
+    color: #e33e5a;
+
+    position: absolute;
+    width: 44px;
+    height: 29px;
+    cursor: pointer;
+  }
+  #nor1 {
+    position: absolute;
+    left: 0px;
+    right: 11.37%;
+    top: 100px;
+    bottom: 70.6%;
+    width: 2.7%;
+  }
+  #nor2 {
+    position: absolute;
+    left: 1%;
+    right: 88.57%;
+    top: 41%;
+    width: 2.7%;
+  }
+  #or {
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    width: 2.7%;
+  }
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 13px;
+  }
+  ul {
+    position: relative;
+    width: 100px;
+    left: 50px;
+    right: 200px;
+    bottom: 30px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  #nom h1 {
+    font-weight: 300;
+    margin: 40px -100px;
+    font-size: 60px;
+    bottom: 10px;
+  }
+  h5 {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 240px;
+    bottom: 70px;
+    font-size: 15px;
+  }
+  .input {
+    width: 400px;
+    height: 43px;
+    border-radius: 15px;
+    left: -30px;
+    top: -50px;
+    margin: 0 0 40px 0;
+    font-size: 15px;
+  }
+  .choix {
+    position: absolute;
+
+    width: 200px;
+    height: 30px;
+    left: -20px;
+    top: -85px;
+  }
+  .btn {
+    width: 40%;
+
+    margin: 3px 8px;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    border: 0;
+  }
+  .clavier {
+    position: relative;
+    width: 50%;
+    height: 51%;
+    top: -50px;
+    left: 80px;
+    border-radius: 10px;
+  }
+  .key {
+    width: 10%;
+    height: 30px;
+    left: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .claviernum {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    top: -30px;
+    left: 110px;
+    border: 4px solid #5c38ff;
+    padding: 0.5%;
+    font-family: "Comfortaa";
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .keynum {
+    width: 5%;
+    height: 30px;
+  }
+  #nom {
+    position: relative;
+    width: 70%;
+    left: 50px;
+    top: 20px;
+    bottom: 100px;
+    padding: 10px;
+  }
+  .h5num {
+    font-weight: 200;
+    width: 50px;
+    height: 20%;
+    top: 20px;
+    left: 240px;
+    bottom: 70px;
+    font-size: 15px;
+  }
+  .clearfunc {
+    width: 20px;
+    position: absolute;
+    top: -34px;
+    left: 320px;
+    cursor: pointer;
+  }
+  .cleardont {
+    width: 20px;
+    position: relative;
+    top: -123px;
+    left: 320px;
+    cursor: pointer;
+  }
+  #next {
+    font-size: 25px;
+    position: absolute;
+    bottom: 375px;
+    left: -400px;
+    cursor: pointer;
+    color: #e33e5a;
+  }
+  i {
+    font-size: 25px;
+    color: #e33e5a;
+
+    position: absolute;
+    width: 44px;
+    height: 29px;
+    cursor: pointer;
+  }
+  #nor1 {
+    position: absolute;
+    left: 0px;
+    right: 11.37%;
+    top: 100px;
+    bottom: 70.6%;
+    width: 2.7%;
+  }
+  #nor2 {
+    position: absolute;
+    left: 1%;
+    right: 88.57%;
+    top: 41%;
+    width: 2.7%;
+  }
+  #or {
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    width: 2.7%;
+  }
+}
+@media (max-width: 1165px) and (min-width: 1057px) {
+  a {
+    font-size: 15px;
+  }
+  ul {
+    position: relative;
+    width: 467px;
+    left: 450px;
+    right: 200px;
+    bottom: 30px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  #nom h1 {
+    font-weight: 300;
+    margin: 40px 0px;
+    font-size: 100px;
+    bottom: 10px;
+  }
+  h5 {
+    font-weight: 200;
+    width: 500px;
+    top: 20px;
+    left: 550px;
+    bottom: 70px;
+    font-size: 19px;
+  }
+  .input {
+    width: 850px;
+    height: 43px;
+    border-radius: 15px;
+    left: -10px;
+    top: -30px;
+    margin: 0 0 40px 0;
+    font-size: 15px;
+  }
+  .choix {
+    position: absolute;
+
+    width: 280px;
+    height: 30px;
+    left: -00px;
+    top: -65px;
+  }
+  .btn {
+    width: 40%;
+
+    margin: 3px 8px;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    border: 0;
+  }
+  .clavier {
+    position: relative;
+    width: 45%;
+    height: 35%;
+    top: -40px;
+    left: 250px;
+    border-radius: 10px;
+  }
+  .key {
+    width: 7%;
+    height: 30px;
+    left: 8px;
+    top: 7px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .claviernum {
+    position: relative;
+    width: 40%;
+    height: 20%;
+    top: -20px;
+    left: 250px;
+    border: 4px solid #5c38ff;
+    padding: 0.5%;
+    font-family: "Comfortaa";
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .keynum {
+    width: 10%;
+    height: 30px;
+    left: 3px;
+  }
+  #nom {
+    position: relative;
+    width: 70%;
+    left: 50px;
+    top: 20px;
+    bottom: 100px;
+    padding: 10px;
+  }
+  .h5num {
+    font-weight: 200;
+    width: 500px;
+    top: 20px;
+    left: 550px;
+    bottom: 70px;
+    font-size: 19px;
+  }
+  .clearfunc {
+    width: 20px;
+    position: absolute;
+    top: -15px;
+    left: 770px;
+    cursor: pointer;
+  }
+  .cleardont {
+    width: 20px;
+    position: relative;
+    top: -103px;
+    left: 770px;
+    cursor: pointer;
+  }
+  #next {
+    font-size: 25px;
+    position: absolute;
+    bottom: 355px;
+    left: 60px;
+    cursor: pointer;
+    color: #e33e5a;
+  }
+  i {
+    font-size: 25px;
+    color: #e33e5a;
+
+    position: absolute;
+    width: 44px;
+    height: 29px;
+    cursor: pointer;
+  }
+  #nor1 {
+    position: absolute;
+    left: 0px;
+    right: 11.37%;
+    top: 100px;
+    bottom: 70.6%;
+    width: 2.7%;
+  }
+  #nor2 {
+    position: absolute;
+    left: 1%;
+    right: 88.57%;
+    top: 41%;
+    width: 2.7%;
+    display: none;
+  }
+  #or {
+    position: relative;
+    bottom: 20%;
+    left: 50%;
+    width: 2.7%;
+    display: none;
+  }
+}

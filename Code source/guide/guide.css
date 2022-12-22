@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{ 
+    background-image: url("../acceuil/images/Background.svg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+
+.wrapper {
+    margin-top: 50px;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: linear-gradient(to right,#5C38FF,#E33E5A);
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+
+}
+
+
+#image{
+  width: 70%;
+  border: 4px solid #c026e6;
+  border-radius: 30px;
+}
+
+.accueil{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 200px;
+}
+
+.accueil #coments{
+  position: absolute;
+  width: 30%;
+  height: 12rem;
+  background-color: #33333350;
+  border-radius: 25px;
+}
+
+#bg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#bouton{
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 300;
+    margin-top: 60px;
+    border: none;
+    border-radius: 20px;
+    font-family:'Comfortaa';
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#5c38ff,#e33e5a);
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#boutons{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}

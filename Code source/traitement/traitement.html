@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPTIMUM - Traitement</title>
+    <link rel="stylesheet" href="./styles/traitement1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="../acceuil/accueil.html">ACCUEIL</a></li>
+        <li><a href="traitement.html">TRAITEMENT</a></li>
+        <li><a href="../Page ressource/index.html">RESSOURCES</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+      <div id="nom">
+        <h1>OPTIMUM</h1>
+        <h5>
+          Simplificateur de <br />
+          fonctions logiques
+        </h5>
+      </div>
+      <div class="container">
+        <input
+          type="text"
+          name="fonction"
+          placeholder="Expression littérale"
+          id="fonction"
+          class="input use-keyboard-input"
+        />
+
+        <img src="./styles/images/icons8-close.svg" class="clearfunc" />
+        <div class="containerchoix">
+          <div class="choix">
+            <!--<i class="fa-solid fa-keyboard"></i> -->
+
+            <button id="numerique" class="btn">Numérique</button>
+
+            <button id="litterale" class="btn">Littérale</button>
+          </div>
+        </div>
+
+        <input
+          type="text"
+          name="fonction"
+          placeholder="Don't care"
+          id="dontcare"
+          class="input use-keyboard-input"
+        />
+        <img src="./styles/images/icons8-close.svg" class="cleardont" />
+        <div class="btnContainer">
+          <div class="logicbtn">
+            <button class="logic" id="ou">Ou</button>
+            <button class="logic" id="et">Et</button>
+            <button class="logic" id="non">Non</button>
+          </div>
+
+          <button id="simplifier">
+            Simplifier
+            <img src="./styles/images/enter.svg" alt="next" id="entrer" />
+          </button>
+        </div>
+      </div>
+
+      <svg
+        id="nor1"
+        width="32"
+        height="33"
+        viewBox="0 0 32 33"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 18.2671L24.6661 32.5081L30.2703 22.8012C32.6731 18.6394 31.4939 12.9919 27.2696 8.77339C27.8581 8.46606 28.5167 8.0374 28.8669 7.43072C29.4243 6.46532 29.4716 5.25813 28.9984 4.07473C28.5252 2.89133 27.5702 1.82865 26.3437 1.12047C25.1171 0.412298 23.7193 0.116634 22.4578 0.298522C21.1964 0.480411 20.1745 1.12495 19.6172 2.09036C19.2669 2.69704 19.1689 3.40082 19.2531 4.14508C13.4876 2.59597 8.00707 4.39844 5.60425 8.56025L0 18.2671ZM4.48432 17.6205L8.68751 10.3404C9.80226 8.40956 11.8459 7.12048 14.3688 6.7567C16.8917 6.39292 19.6873 6.98425 22.1405 8.4006C24.5937 9.81696 26.5035 11.9423 27.45 14.3091C28.3964 16.6759 28.3018 19.0903 27.1871 21.0211L22.9839 28.3012L4.48432 17.6205ZM22.7004 3.87048C23.0507 3.2638 24.1718 3.10215 24.9426 3.54719C25.7134 3.99222 26.134 5.04392 25.7837 5.6506C25.5979 5.9724 25.2573 6.18725 24.8368 6.24788C24.4163 6.30851 23.9504 6.20995 23.5415 5.97389C22.7707 5.52886 22.3502 4.47716 22.7004 3.87048Z"
+          fill="#E33E5A"
+          fill-opacity="0.5"
+        />
+      </svg>
+      <svg
+        id="nor2"
+        width="32"
+        height="33"
+        viewBox="0 0 32 33"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.01172 32.5079L31.6778 18.267L26.0735 8.56013C23.6707 4.39833 18.1902 2.59585 12.4247 4.14496C12.4528 3.4816 12.4109 2.69692 12.0606 2.09024C11.5032 1.12484 10.4814 0.480291 9.21997 0.298403C7.95852 0.116514 6.56074 0.41218 5.33414 1.12036C4.10754 1.82853 3.1526 2.89121 2.67939 4.07461C2.20618 5.25801 2.25347 6.4652 2.81084 7.4306C3.16111 8.03728 3.7216 8.47405 4.40824 8.77327C0.183941 12.9918 -0.995347 18.6393 1.40747 22.8011L7.01172 32.5079ZM8.69392 28.3011L4.49073 21.021C3.37598 19.0902 3.28141 16.6758 4.22783 14.309C5.17425 11.9422 7.08413 9.81684 9.53733 8.40049C11.9905 6.98413 14.7861 6.3928 17.309 6.75658C19.8319 7.12036 21.8755 8.40944 22.9903 10.3403L27.1935 17.6204L8.69392 28.3011ZM5.8941 5.65048C5.54384 5.0438 5.96439 3.9921 6.7352 3.54707C7.50602 3.10204 8.6271 3.26368 8.97736 3.87036C9.16316 4.19216 9.17892 4.59456 9.02118 4.98903C8.86344 5.38349 8.54513 5.73772 8.13626 5.97378C7.36545 6.41881 6.24437 6.25716 5.8941 5.65048Z"
+          fill="#E33E5A"
+          fill-opacity="0.5"
+        />
+      </svg>
+      <svg
+        id="or"
+        width="33"
+        height="33"
+        viewBox="0 0 33 33"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.65234 32.3988C14.8769 21.7917 20.8184 16.8939 32.4184 12.8076L27.043 6.28674C22.5635 0.852691 11.2466 -0.770369 2.61742 0.867002C-0.636398 9.02523 -1.20252 20.4439 3.27696 25.8779L8.65234 32.3988ZM8.93541 26.6895L6.24772 23.429C3.11208 19.6252 3.2679 10.7352 5.03634 3.80139C12.1802 3.38847 20.9366 4.93181 24.0722 8.73564L26.7599 11.9961C19.4156 15.4948 13.7712 20.1477 8.93541 26.6895Z"
+          fill="#5C38FF"
+          fill-opacity="0.5"
+        />
+      </svg>
+      <script src="./src/traitement.js"></script>
+    </section>
+  </body>
+</html>

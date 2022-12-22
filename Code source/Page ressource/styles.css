@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("../acceuil/images/Background.svg");
+
+}
+
+.navbar {
+    height: 100px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 0 50px;
+    padding: 0 80px;
+}
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    padding: 12px;
+    display: block;
+    text-align: center;
+    width: 150px;
+}
+
+.nav-link:hover {
+    background: linear-gradient(180deg, rgba(92,56,255,1) 0%, rgba(227,62,90,1) 100%) border-box;
+    color: #fff;
+    padding: 12px;
+    border: 0.1px solid transparent;
+    border-radius: 15px;
+}
+
+.nav-link::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 15px; /*1*/
+    border: 3px solid transparent; /*2*/
+    background: linear-gradient(180deg, rgba(92,56,255,1) 0%, rgba(227,62,90,1) 100%) border-box;
+    -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
+}
+
+.home-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-body .home-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    padding: 0px 100px 50px;
+}
+
+.home-body .home-left .title {
+    font-size: 40px;
+    font-weight: 300;
+    color: #4A4453;
+}
+
+.gradient-text {
+    background: linear-gradient(180deg, rgba(92,56,255,1) 0%, rgba(227,62,90,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-body .home-left .desc {
+    font-size: 16px;
+}
+
+.home-body .home-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 0;
+    padding-top: 50px;
+}
+
+.home-body .home-right .card {
+    width: 330px;
+    height: 355px;
+    background: url("./img/book.png") no-repeat;
+    display: inline-block;
+}
+.home-body .home-right .card:hover {
+    background: url("./img/bookred.png") no-repeat;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, rgba(92,56,255,1) 0%, rgba(227,62,90,1) 100%);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    border: 0.1px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  .modal-content p span {
+    color: #E33E5A; 
+    font-weight: 700 !important;
+  }
+
+  .modal-content .btn-container {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .modal-content .btn-container .modal-btn {
+      background-color: #E33E5A;
+      color: #1D0F33;
+      font-size: 20px;
+      border-radius: 5px;
+      border: transparent;
+      padding: 7px 15px;
+      cursor: pointer;
+  }
+
+  .buttons {
+      margin-top: 10px;
+      display: flex;
+      gap: 0 50px;
+      justify-content: center;
+      align-items: center;
+  }
+  .cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 0 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(92,56,255,1);
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.cards .text-algo {
+    font-size: 26px;
+}
+
+.cards .text-algo-name {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-algo {
+    font-size: 30px
+}
+
+.modal-algo-name {
+    font-size: 36px;
+}
+
+
+@keyframes bgimage1 {
+
+    0% {
+        background-image: url("img/Pic1.jpg");
+    }
+
+    33% {
+        background-image: url("img/Pic1.jpg");
+    }
+
+    66% {
+        background-image: url("img/Pic2.png");
+    }
+
+    100% {
+        background-image: url("img/Pic3.png");
+    }    
+}
+
+#cardOne:hover {
+    -webkit-animation: bgimage1 4s infinite;
+    animation: bgimage1 4s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+a {
+    font-family: "Comfortaa", cursive;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: #4a4453;
+  }
+ ul a::after {
+    content: "";
+    display: block;
+    background-color: #e33e5a;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+ ul a:hover {
+    color: black;
+  }
+ ul a:hover::after {
+    width: 100%;
+  }
+  ul {
+    position: relative;
+    padding: 0;
+    width: 40%;
+    margin-left: 45%;
+    top: 30px;
+    display: flex;
+    gap: 10%;
+    list-style: none;
+  }
+  ul li {
+    width: fit-content;
+  }
+  
+#cardOne:hover > p {
+    display: none;
+}
+
+@keyframes bgimage2 {
+
+    0% {
+        background-image: url("img/Pic4.jpg");
+    }
+
+    33% {
+        background-image: url("img/Pic4.jpg");
+    }
+
+    66% {
+        background-image: url("img/Pic5.jpg");
+    }
+
+    100% {
+        background-image: url("img/Pic6.jpg");
+    }    
+}
+#cardTwo:hover {
+    -webkit-animation: bgimage2 5s infinite;
+    animation: bgimage2 5s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+#cardTwo:hover > p {
+    display: none;
+}
